@@ -32,7 +32,7 @@
 
 .container-xxl {
     justify-content: center;
-
+   
     overflow-x: hidden; /* Prevents horizontal scroll */
   }
 
@@ -106,7 +106,7 @@ h6,
 
 /*** Navbar ***/
 .navbar .navbar-nav .nav-link {
-    padding: 30px 15px;
+    padding: 30px 8px;
     color: var(--dark);
     font-weight: 500;
     outline: none;
@@ -558,6 +558,14 @@ h6,
     flex-wrap: wrap;
     padding: 5px;
 }
+.container3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 5px;
+}
 
 .box1 {
     border: 2px solid #cb6c28;
@@ -640,4 +648,6 @@ h6,
 .box2 h6 {
     font-size: 10px;
 }
+
+
 

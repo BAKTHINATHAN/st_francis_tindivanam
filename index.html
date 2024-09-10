@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <div class="container-xxl ">
+    <div class="container-xxl  ">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -41,53 +41,145 @@
         </div>
         <!-- Spinner End -->
 
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-footer sticky-top px-4 px-lg-5 py-lg-0">
+    <a href="index.html" class="navbar-brand">
+        <h3 id="header1" class="m-0 text-primary" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px;">
+            <img class="img1" src="img/logo.png" style="width: 80px;" alt="School Logo">St Francis D’ Assisi Matric Higher Secondary School <br> <span class="header4">Santhaimedu Tindivanam</span>
+        </h3>
+       
+    </a>
 
-        <!-- Navbar Start -->
-        <nav class="navbar navbar-expand-lg bg-footer navbar-light sticky-top px-4 px-lg-5 py-lg-0">
-            <a href="index.html" class="navbar-brand" >
-                <h3 class="m-0 text-primary" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 25px;"!important><img src="img/logo.png" style="width: 80px;"></img>St Francis D’ Assisi Matric Higher Secondary School</h3>
-                    <b></b>
-                <h3 style="text-align: center; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 20px;"!important>Santhaimedu,Tindivanam</h3>
-            </a>
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
-                    <a href="about.html" class="nav-item nav-link">About Us</a>
-                    <a href="classes.html" class="nav-item nav-link">Staff</a>
-                    
-                    <!-- Facilities Dropdown -->
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Facilities</a>
-                        <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
-                            <a href="facility_images.html#playground" class="dropdown-item">Playground</a>
-                            <a href="facility_images.html#class_room" class="dropdown-item">Classroom</a>
-                            <a href="facility_images.html#green_environment" class="dropdown-item">Green Environment</a>
-            
-                            <!-- Labs Dropdown within Facilities -->
-                            <div class="nav-item dropdown">
-                                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Labs</a>
-                                <div class="dropdown-menu rounded-50 rounded-bottom border-0 shadow-sm m-0">
-                                    <a href="facility_images.html#Physics_lab" class="dropdown-item">Physics Lab</a>
-                                    <a href="facility_images.html#chemistry_lab" class="dropdown-item">Chemistry Lab</a>
-                                    <a href="facility_images.html#biology_lab" class="dropdown-item">Biology Lab</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            
-                    <a href="FYF_club.html" class="nav-item nav-link">FYF Club</a>
-                    <a href="testimonial.html" class="nav-item nav-link">Events</a>
-                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
-                </div>
-                <a href="contact.html#Admission" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join<i class="fa fa-arrow-right ms-3"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About Us</a>
+            <a href="classes.html" class="nav-item nav-link">Staff</a>
+
+            <!-- Facilities Dropdown -->
+            <div class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Facilities
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="facility_images.html#playground">Playground</a></li>
+                    <li><a class="dropdown-item" href="facility_images.html#class_room">Classroom</a></li>
+                    <li><a class="dropdown-item" href="facility_images.html#green_environment">Green Environment</a></li>
+
+                    <!-- Labs Dropdown within Facilities -->
+                    <div class="dropdown-divider"></div>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="labsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Labs
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="labsDropdown">
+                            <li><a class="dropdown-item" href="facility_images.html#Physics_lab">Physics Lab</a></li>
+                            <li><a class="dropdown-item" href="facility_images.html#chemistry_lab">Chemistry Lab</a></li>
+                            <li><a class="dropdown-item" href="facility_images.html#biology_lab">Biology Lab</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-            
-        </nav>
-        <!-- Navbar End -->
 
+            <a href="FYF_club.html" class="nav-item nav-link">FYF Club</a>
+            <a href="testimonial.html" class="nav-item nav-link">Events</a>
+            <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+        <a href="contact.html#Admission" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join <i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<style>
+
+.header4{
+    color: rgb(0, 0, 0) !important;
+    padding-left: 140px !important;
+    
+}
+
+
+    /* Navbar Styles */
+.navbar {
+    background-color: #f8f9fa; /* Adjust the background color as needed */
+    border-bottom: 1px solid #e0e0e0; /* Optional: Add a bottom border for separation */
+}
+
+.navbar-brand h3 {
+    font-size: 1.25rem; /* Adjust the font size as needed */
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-image: url('path/to/toggler-icon.svg'); /* Use your own icon or the default Bootstrap icon */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem; /* Adjust font size for navigation links */
+}
+
+/* Dropdown Styles */
+.dropdown-menu {
+    width: 100%; /* Make dropdowns full width on mobile */
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: 0.875rem; /* Adjust font size for dropdown items */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #007bff; /* Adjust button background color */
+    border-color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navbar-brand h3 {
+        font-size: 1rem; /* Smaller font size for medium devices */
+    }
+
+    .btn-primary {
+        font-size: 0.875rem; /* Adjust button font size for medium devices */
+        padding: 8px 16px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand h3 {
+        font-size: 0.875rem; /* Smaller font size for small devices */
+    }
+
+    .btn-primary {
+        font-size: 0.75rem; /* Smaller font size for small devices */
+        padding: 6px 12px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand h3 {
+        font-size: 0.75rem; /* Smaller font size for very small devices */
+    }
+
+    .btn-primary {
+        font-size: 0.75rem; /* Adjust button font size for very small devices */
+        padding: 4px 8px; /* Adjust padding */
+    }
+    .header4{
+    color: rgb(0, 0, 0) !important;
+   padding-left: 80px !important;
+    
+}
+}
+
+</style>
 
         <!-- Carousel Start -->
         <div class="container-fluid p-0 mb-5 ">
@@ -120,8 +212,10 @@
                 <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
             </div>
             <div class="row g-4">
-                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                <!-- <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="facility-item">
+                        
+  
                         <section class="container3">
    
                             <div class="box3">
@@ -132,9 +226,32 @@
                                <br> 
                                <button class="button"><a href="facility_images.html#green_environment">Show more</a></button>
                             </div>
-                        </section> 
+                          </section> 
+                    </div>
+                </div> -->
+
+
+                <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="facility-item">
+                      
+                        <section class="container3">
+   
+                            <div class="box3">
+                                <i class="fa fa-h-square fa-3x text-primary " style="color: rgb(200, 110, 12) !important;"></i>
+                                <h1> Healthy environment </h1>
+                                <p>Voilet striped pinafore of knee length, white with pink, voilet Stripes Blouse with shirt collar and sleeves.</p>
+                               
+                               <br> 
+                                <button class="button"><a href="facility_images.html#class_room">Show more</a></button>
+                                </div>
+                            
+                          </section> 
                     </div>
                 </div>
+
+
+
+
                 <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="facility-item">
                       
@@ -147,7 +264,7 @@
                                
                                <br> 
                                 <button class="button1"><a href="facility_images.html#class_room">Show more</a></button>
-                            </div>
+                                </div>
                             
                           </section> 
                     </div>
@@ -192,32 +309,32 @@
     </div>
     <!-- Facilities End -->
 
-
-        <!-- About Start -->
-        <div class="container-xxl py-5 bg-white">
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
-                        <div class="row g-4 align-items-center">
-                            <div class="col-sm-6">
-                                <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
-                            </div>
-                        </div>
+<!-- About Start -->
+<div class="container-xxl py-5 bg-white">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
+                <div class="row g-4 align-items-center">
+                    <div class="col-sm-6">
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
                     </div>
-                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <img class="img-fluid w-20 rounded-circle bg-light p-3" src="img/DSC_3519.JPG" alt="">
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img class="img-fluid rounded-circle bg-light p-3" src="img/DSC_3519.JPG" alt="">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About End -->
+    </div>
+</div>
+<!-- About End -->
+
         <h1 style="text-align: center;">Vission And Mission</h1><br>
         <!-- Team Start -->
         <section class="container2 bg-white">
@@ -242,14 +359,14 @@
             <div class="container">
                 <div class="bg-light">
                     <div class="row g-0">
-                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="img/FINAL 6X12 CENT.JPG" style="object-fit: cover;">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" >
+                            <div class="">
+                                <img class="img3" src="img/FINAL 6X12 CENT.JPG">
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4" style="text-align: center;">School Toppers</h1>
+                                <h1 class="mb-4" id="one" style="text-align: center;">School Toppers</h1>
                             </div>
                         </div>
                     </div>
@@ -259,7 +376,12 @@
         <!-- Call To Action End -->
 
 
-
+<style>
+.img3{
+    width: 800px;
+    height: auto;
+}
+</style>
 
 
         <div class="container-fluid bg-footer text-white-50 footer pt-3 mt-5 wow fadeIn" data-wow-delay="0.1s">
@@ -290,418 +412,440 @@
 
 </html>
 
-<style> 
-    /* General Mobile View Adjustments */
-@media (max-width: 768px) {
 
-/* Navbar adjustments */
-.navbar-brand h3 {
-font-size: 18px !important;
-}
-.navbar-brand img {
-width: 50px !important;
-}
-.navbar-nav .nav-item {
-font-size: 14px !important;
-}
 
-/* Carousel images */
-.owl-carousel-item img {
-height: 200px !important;
-object-fit: cover;
-}
 
-/* Facilities section */
-.facility-item h1 {
-font-size: 18px !important;
-}
-.facility-item p {
-font-size: 14px !important;
-}
 
-/* Call to Action Section */
-.h1.mb-4 {
-font-size: 22px !important;
-}
 
-/* Vision & Mission section */
-section.container2 .box1 h1 {
-font-size: 18px !important;
-}
-section.container2 .box1 p {
-font-size: 14px !important;
-}
 
-/* General padding and margin adjustments */
-.container-xxl {
-padding: 15px !important;
-}
-.container-fluid {
-padding: 10px !important;
-}
-.wow {
-margin-bottom: 20px !important;
-}
-}
 
-/* Adjust for very small devices */
-@media (max-width: 480px) {
 
-/* Further reduce the font sizes */
-.navbar-brand h3 {
-font-size: 16px !important;
-}
-.navbar-nav .nav-item {
-font-size: 12px !important;
-}
 
-/* Reduce carousel height for smaller screens */
-.owl-carousel-item img {
-height: 150px !important;
-}
 
-/* Facilities section */
-.facility-item h1 {
-font-size: 16px !important;
-}
-.facility-item p {
-font-size: 12px !important;
-}
 
-/* About Section image */
+
+
+
+<style>
+    .header3{
+        font-size: 30px !important;
+        padding-left: 100px !important;
+    }
+@media only screen and (max-width: 480px) {
+    #header1 {
+      font-size: 10px !important;
+    }
+    .img1{
+        width: 14% !important;
+        height: auto;
+    }
+    .header2{
+        font-size: 10px !important;
+    }
+    .navbar-toggler{
+        font-size: 5px;
+    }
+    .navbar-toggler-icon{
+        font-size: 5px !important;
+    }
+    .navbar-brand{
+       display: flex;
+    }
+    .header3{
+        font-size: 20px !important;
+        text-align: center !important;
+        justify-content: center !important;
+    }
+  }</style>
+
+
+
+
+
+
+
+
+<style>
+                     
+                     
+    .box2 {
+       border: 2px solid #000000;
+       border-radius: 10px;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       background-color: #f9f9f9;
+       width: 300px;
+       height: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   .box2:hover {
+       background-color: #e0f7fa;
+       transform: rotate(5deg);
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+       border: 2px solid rgb(0, 103, 2);
+   }
+   
+   .box2 h1 {
+       color: #103741;
+       font-size: 1.5em;
+       margin-bottom: 10px;
+       text-align: justify;
+   }
+   
+   .box2 p {
+       font-size: 10px;
+       line-height: 1.6;
+       color: #000000;
+       margin: 0;
+       font-weight: bold;
+   }
+   
+   .box2 h6 {
+       font-size: 10px;
+   }
+   
+   .box3 {
+       border: 2px solid #000000;
+       border-radius: 10px;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       background-color: #f9f9f9;
+       width: 300px;
+       height: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   .box3:hover {
+       background-color: #e0f7fa;
+       transform: rotate(5deg);
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+       border: 2px solid #e16208;
+   }
+   
+   .box3 h1 {
+       color: #103741;
+       font-size: 1.5em;
+       margin-bottom: 10px;
+       text-align: justify;
+   }
+   
+   .box3 p {
+       font-size: 10px;
+       line-height: 1.6;
+       color: #000000;
+       margin: 0;
+       font-weight: bold;
+   }
+   
+   .box3 h6 {
+       font-size: 10px;
+   }
+   
+   .box4 {
+       border: 2px solid #000000;
+       border-radius: 10px;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       background-color: #f9f9f9;
+       width: 300px;
+       height: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   .box4:hover {
+       background-color: #e0f7fa;
+       transform: rotate(5deg);
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+       border: 2px solid #c29b00;
+   }
+   
+   .box4 h1 {
+       color: #103741;
+       font-size: 1.5em;
+       margin-bottom: 10px;
+       text-align: justify;
+   }
+   
+   .box4 p {
+       font-size: 10px;
+       line-height: 1.6;
+       color: #000000;
+       margin: 0;
+       font-weight: bold;
+   }
+   
+   .box4 h6 {
+       font-size: 10px;
+   }
+   
+   .box5 {
+       border: 2px solid #000000;
+       border-radius: 10px;
+       padding: 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+       background-color: #f9f9f9;
+       width: 300px;
+       height: 300px;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+       overflow: hidden;
+       position: relative;
+   }
+   
+   .box5:hover {
+       background-color: #e0f7fa;
+       transform: rotate(5deg);
+       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+       border: 2px solid #2393de;
+   }
+   
+   .box5 h1 {
+       color: #103741;
+       font-size: 1.5em;
+       margin-bottom: 10px;
+       text-align: justify;
+   }
+   
+   .box5 p {
+       font-size: 10px;
+       line-height: 1.6;
+       color: #000000;
+       margin: 0;
+       font-weight: bold;
+   }
+   
+   .box5 h6 {
+       font-size: 10px;
+   }
+   
+   button {
+       background: none;
+       border: none;
+       padding: 0;
+       margin: 0;
+       cursor: pointer;
+   }
+   
+   .button {
+       display: inline-flex;
+       align-items: center;
+       background-color: #d0820d;
+       border: none;
+       border-radius: 20px;
+       padding: 10px 20px;
+       color: white;
+       font-size: 16px;
+       font-weight: bold;
+       text-transform: uppercase;
+       cursor: pointer;
+       transition: background-color 0.3s ease, transform 0.3s ease;
+       text-decoration: none;
+   }
+   
+   .button a {
+       color: inherit;
+       text-decoration: none;
+   }
+   
+   .button:hover, .button:focus {
+       background-color: #dbaf11;
+       transform: scale(1.05);
+   }
+   
+   .button:focus {
+       outline: 2px solid #ffffff;
+       outline-offset: 2px;
+   }
+   
+   .button1 {
+       display: inline-flex;
+       align-items: center;
+       background-color: #2d7304;
+       border: none;
+       border-radius: 20px;
+       padding: 10px 20px;
+       color: white;
+       font-size: 16px;
+       font-weight: bold;
+       text-transform: uppercase;
+       cursor: pointer;
+       transition: background-color 0.3s ease, transform 0.3s ease;
+       text-decoration: none;
+   }
+   
+   .button1 a {
+       color: inherit;
+       text-decoration: none;
+   }
+   
+   .button1:hover, .button:focus {
+       background-color: #088f21;
+       transform: scale(1.05);
+   }
+   
+   .button1:focus {
+       outline: 2px solid #ffffff;
+       outline-offset: 2px;
+   }
+   
+   .button2 {
+       display: inline-flex;
+       align-items: center;
+       background-color: #e9a909;
+       border: none;
+       border-radius: 20px;
+       padding: 10px 20px;
+       color: white;
+       font-size: 16px;
+       font-weight: bold;
+       text-transform: uppercase;
+       cursor: pointer;
+       transition: background-color 0.3s ease, transform 0.3s ease;
+       text-decoration: none;
+   }
+   
+   .button2 a {
+       color: inherit;
+       text-decoration: none;
+   }
+   
+   .button2:hover, .button:focus {
+       background-color: #ff9d00;
+       transform: scale(1.05);
+   }
+   
+   .button2:focus {
+       outline: 2px solid #ffffff;
+       outline-offset: 2px;
+   }
+   
+   .button3 {
+       display: inline-flex;
+       align-items: center;
+       background-color: #1799cd;
+       border: none;
+       border-radius: 20px;
+       padding: 10px 20px;
+       color: white;
+       font-size: 16px;
+       font-weight: bold;
+       text-transform: uppercase;
+       cursor: pointer;
+       transition: background-color 0.3s ease, transform 0.3s ease;
+       text-decoration: none;
+   }
+   
+   .button3 a {
+       color: inherit;
+       text-decoration: none;
+   }
+   
+   .button3:hover, .button:focus {
+       background-color: #0056b3;
+       transform: scale(1.05);
+   }
+   
+   .button3:focus {
+       outline: 2px solid #ffffff;
+       outline-offset: 2px;
+   }
+
+
+   /*** About ***/
 .about-img img {
-width: 150px !important;
-height: auto !important;
+    transition: .5s;
+    max-width: 100%; /* Ensures image scales with container */
+    height: auto; /* Keeps image aspect ratio */
 }
 
-/* Call to Action section */
-.h1.mb-4 {
-font-size: 18px !important;
+/* Hover Effect */
+.about-img img:hover {
+    background: var(--primary) !important; /* Background change on hover */
 }
 
-/* Buttons */
-.btn {
-font-size: 14px !important;
-padding: 8px 20px !important;
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+   
+
+    .btn-primary {
+        padding: 10px 20px; /* Adjust button padding */
+        font-size: 0.875rem; /* Adjust button font size */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
 }
 
-/* Footer text */
-.footer a {
-font-size: 12px !important;
+@media (max-width: 768px) {
+    .row.g-5 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .col-lg-6 {
+        width: 100%;
+        padding: 0 15px; /* Add padding to columns */
+    }
+
+    h1 {
+        font-size: 1.25rem; /* Smaller heading size */
+    }
+
+    .btn-primary {
+        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.75rem; /* Smaller button font size */
+    }
 }
 
-/* Back to Top button */
-.btn-lg-square {
-width: 40px !important;
-height: 40px !important;
-}
-}
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1rem; /* Even smaller heading size */
+    }
 
-.box2 {
-    border: 2px solid #000000;
+    .btn-primary {
+        padding: 6px 12px; /* Smaller button padding */
+        font-size: 0.75rem; /* Same smaller button font size */
+    }
+
+    .about-img img {
+        border-radius: 0; /* Remove rounded corners on very small screens */
+    }
+
+    .img3{
+    width: 290px;
+    height: auto;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid black;
     border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
-    position: relative;
+ 
 }
-
-.box2:hover {
-    background-color: #e0f7fa;
-    transform: rotate(5deg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid rgb(0, 103, 2);
-}
-
-.box2 h1 {
-    color: #103741;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-.box2 p {
-    font-size: 10px;
-    line-height: 1.6;
-    color: #000000;
-    margin: 0;
-    font-weight: bold;
-}
-
-.box2 h6 {
-    font-size: 10px;
-}
-
-.box3 {
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
-    position: relative;
-}
-
-.box3:hover {
-    background-color: #e0f7fa;
-    transform: rotate(5deg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid #e16208;
-}
-
-.box3 h1 {
-    color: #103741;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-.box3 p {
-    font-size: 10px;
-    line-height: 1.6;
-    color: #000000;
-    margin: 0;
-    font-weight: bold;
-}
-
-.box3 h6 {
-    font-size: 10px;
-}
-
-.box4 {
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
-    position: relative;
-}
-
-.box4:hover {
-    background-color: #e0f7fa;
-    transform: rotate(5deg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid #c29b00;
-}
-
-.box4 h1 {
-    color: #103741;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-.box4 p {
-    font-size: 10px;
-    line-height: 1.6;
-    color: #000000;
-    margin: 0;
-    font-weight: bold;
-}
-
-.box4 h6 {
-    font-size: 10px;
-}
-
-.box5 {
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
-    overflow: hidden;
-    position: relative;
-}
-
-.box5:hover {
-    background-color: #e0f7fa;
-    transform: rotate(5deg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid #2393de;
-}
-
-.box5 h1 {
-    color: #103741;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-.box5 p {
-    font-size: 10px;
-    line-height: 1.6;
-    color: #000000;
-    margin: 0;
-    font-weight: bold;
-}
-
-.box5 h6 {
-    font-size: 10px;
-}
-
-button {
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-}
-
-.button {
-    display: inline-flex;
-    align-items: center;
-    background-color: #d0820d;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-}
-
-.button a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.button:hover, .button:focus {
-    background-color: #dbaf11;
-    transform: scale(1.05);
-}
-
-.button:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-}
-
-.button1 {
-    display: inline-flex;
-    align-items: center;
-    background-color: #2d7304;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-}
-
-.button1 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.button1:hover, .button:focus {
-    background-color: #088f21;
-    transform: scale(1.05);
-}
-
-.button1:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-}
-
-.button2 {
-    display: inline-flex;
-    align-items: center;
-    background-color: #e9a909;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-}
-
-.button2 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.button2:hover, .button:focus {
-    background-color: #ff9d00;
-    transform: scale(1.05);
-}
-
-.button2:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
-}
-
-.button3 {
-    display: inline-flex;
-    align-items: center;
-    background-color: #1799cd;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-decoration: none;
-}
-
-.button3 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.button3:hover, .button:focus {
-    background-color: #0056b3;
-    transform: scale(1.05);
-}
-
-.button3:focus {
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
 }
 </style>
